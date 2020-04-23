@@ -1,0 +1,31 @@
+@import './UI/styles/styles.scss';
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=853&q=80');
+}
+
+#root {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    box-shadow: $boxShadowHover;
+    z-index: 1;
+    background: $white;
+}
+@media (max-width: 1024px) {
+  #root {
+      max-width: 750px;
+  }
+}
+@media (max-width: 768px) {
+  #root {
+      max-width: 600px;
+  }
+}

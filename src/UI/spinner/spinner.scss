@@ -1,0 +1,19 @@
+.loadingspinner {
+    position: relative;
+	pointer-events: none;
+    width: 5em;
+    margin-left: 340px;
+	height: 5em;
+	border: .7em solid transparent;
+	border-color: #eee;
+	border-top-color: #3E67EC;
+	border-radius: 50%;
+	animation: loadingspin .5s linear infinite;
+}
+
+@keyframes loadingspin {
+	100% {
+			transform: rotate(360deg)
+	}
+}
+

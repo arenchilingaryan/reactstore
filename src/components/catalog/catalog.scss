@@ -1,0 +1,69 @@
+@import '../../UI//styles/styles.scss';
+
+
+.catalogItemList {
+    list-style-type: none;
+}
+.catalog {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-right: 2px solid #ccc;
+    .catalogItem {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        margin-bottom: 15px;
+        &:hover {
+        cursor: pointer;
+            .itemName {
+                transition: .2s;
+                color: $blue;
+            }
+            .catalogIcon {
+              transform: scale(1.2) rotate(10deg);
+              box-shadow: $boxShadowHover;
+              transition: .3s;
+            }
+        }
+        img {
+            transition: .3s;
+            box-shadow: $boxShadow;
+            width: 30px;
+            height: 30px;
+            margin-right: 30px;
+            &:hover {
+                transform: scale(1.2) rotate(10deg);
+                box-shadow: $boxShadowHover;
+                transition: .3s;
+            }
+        }
+    }
+};
+
+.subCatalog {
+    padding-left: 20px;
+    .subCatalogItem {
+        display: flex;
+        margin-bottom: 10px;
+        font-size: 14px;
+        .subIcon {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            transition: .3s;
+            &:hover {
+                transform: scale(1.3);
+                transition: .3s;
+            }
+        }
+        &:hover {
+            cursor: pointer;
+            color: $red;
+            .subIcon {
+              transform: scale(1.3);
+              transition: .3s;
+            }
+        }
+    }
+}
